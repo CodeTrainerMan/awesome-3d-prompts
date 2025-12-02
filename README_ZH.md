@@ -31,15 +31,30 @@ awesome-3d-prompts/
 └── examples/          # 示例和演示
 ```
 
-## 🔧 支持的 3D 生成工具
+## 🔄 生成流程
 
-本项目收集的提示词适用于多种 3D 生成工具，包括但不限于：
+### 1. Prompt → Image → 3D
 
-- Stable Diffusion 3D
-- Shap-E
-- Point-E
-- DreamFusion
-- 其他 3D 生成模型
+两阶段流程：先生成图片，再转换为 3D 模型。
+
+**图片生成工具**：
+- [Stable Diffusion](https://stability.ai/stable-diffusion)
+- [Midjourney](https://www.midjourney.com/)
+- [DALL-E 3](https://openai.com/dall-e-3)
+
+**图片转3D工具**：
+- [Shap-E](https://github.com/openai/shap-e)
+- [Tripo AI](https://www.tripo3d.ai/)
+- [Luma AI Genie](https://lumalabs.ai/genie)
+
+### 2. Prompt → 3D
+
+直接从文本提示词生成 3D 模型。
+
+**工具**：
+- [DreamFusion](https://dreamfusion3d.github.io/)
+- [Magic3D](https://research.nvidia.com/labs/dir/magic3d/)
+- [Shap-E](https://github.com/openai/shap-e)
 
 ## 🤝 贡献
 
@@ -63,6 +78,8 @@ awesome-3d-prompts/
 本项目采用 [MIT License](LICENSE) 许可证。
 
 ## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=CodeTrainerMan/awesome-3d-prompts&type=Date)](https://star-history.com/#CodeTrainerMan/awesome-3d-prompts&Date)
 
 如果这个项目对你有帮助，请考虑给它一个 Star！
 

@@ -31,15 +31,30 @@ awesome-3d-prompts/
 └── examples/          # Examples and demos
 ```
 
-## 🔧 Supported 3D Generation Tools
+## 🔄 Generation Workflows
 
-The prompts collected in this project are suitable for various 3D generation tools, including but not limited to:
+### 1. Prompt → Image → 3D
 
-- Stable Diffusion 3D
-- Shap-E
-- Point-E
-- DreamFusion
-- Other 3D generation models
+Two-stage workflow: generate images first, then convert to 3D models.
+
+**Image Generation Tools**:
+- [Stable Diffusion](https://stability.ai/stable-diffusion)
+- [Midjourney](https://www.midjourney.com/)
+- [DALL-E 3](https://openai.com/dall-e-3)
+
+**Image to 3D Tools**:
+- [Shap-E](https://github.com/openai/shap-e)
+- [Tripo AI](https://www.tripo3d.ai/)
+- [Luma AI Genie](https://lumalabs.ai/genie)
+
+### 2. Prompt → 3D
+
+Direct generation from text prompts to 3D models.
+
+**Tools**:
+- [DreamFusion](https://dreamfusion3d.github.io/)
+- [Magic3D](https://research.nvidia.com/labs/dir/magic3d/)
+- [Shap-E](https://github.com/openai/shap-e)
 
 ## 🤝 Contributing
 
@@ -63,6 +78,8 @@ Each prompt file should contain the following information:
 This project is licensed under the [MIT License](LICENSE).
 
 ## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=CodeTrainerMan/awesome-3d-prompts&type=Date)](https://star-history.com/#CodeTrainerMan/awesome-3d-prompts&Date)
 
 If this project helps you, please consider giving it a Star!
 
