@@ -17,6 +17,21 @@ This project is dedicated to collecting and organizing excellent 3D generation p
 - Continuously update and maintain the prompt library
 - Provide references and inspiration for 3D content generation
 
+## 📂 Prompt Categories
+
+- [Vehicles](prompts/vehicles/README.md)
+- [Weapons](prompts/weapons/README.md)
+- [Architecture](prompts/architecture/README.md)
+- [Electronics](prompts/electronics/README.md)
+- [Furniture](prompts/furniture/README.md)
+- [Household](prompts/household/README.md)
+- [Industrial](prompts/industrial/README.md)
+- [Characters](prompts/characters/README.md)
+- [Animals](prompts/animals/README.md)
+- [Nature](prompts/nature/README.md)
+- [Food](prompts/food/README.md)
+- [Clothing](prompts/clothing/README.md)
+
 ## 📂 Project Structure
 
 ```
@@ -38,40 +53,27 @@ awesome-3d-prompts/
 Two-stage workflow: generate images first, then convert to 3D models.
 
 **Image Generation Tools**:
-- [Stable Diffusion](https://stability.ai/stable-diffusion)
-- [Midjourney](https://www.midjourney.com/)
-- [DALL-E 3](https://openai.com/dall-e-3)
+- [Gemini](https://gemini.google.com/)
+- [Grok](https://x.ai/)
+- [ChatGPT](https://chatgpt.com/)
 
 **Image to 3D Tools**:
-- [Shap-E](https://github.com/openai/shap-e)
+- [Stable Point Aware 3D](https://huggingface.co/spaces/stabilityai/stable-point-aware-3d)
 - [Tripo AI](https://www.tripo3d.ai/)
-- [Luma AI Genie](https://lumalabs.ai/genie)
 
 ### 2. Prompt → 3D
 
 Direct generation from text prompts to 3D models.
 
 **Tools**:
-- [DreamFusion](https://dreamfusion3d.github.io/)
-- [Magic3D](https://research.nvidia.com/labs/dir/magic3d/)
-- [Shap-E](https://github.com/openai/shap-e)
+- [Tripo AI](https://www.tripo3d.ai/)
+- [Luma AI Genie](https://lumalabs.ai/genie)
 
 ## 🤝 Contributing
 
 Pull requests are welcome! Feel free to share your excellent 3D prompts!
 
 Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## 📝 Prompt Format
-
-Each prompt file should contain the following information:
-
-- **Title**: Brief description of the prompt
-- **Prompt**: Complete prompt text
-- **Category**: Category classification
-- **Style**: Generation style
-- **Parameters**: Recommended parameter settings (if any)
-- **Example**: Generated example images or links (if any)
 
 ## 📄 License
 

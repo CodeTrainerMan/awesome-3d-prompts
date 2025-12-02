@@ -17,6 +17,21 @@
 - 持续更新和维护提示词库
 - 为 3D 内容生成提供参考和灵感
 
+## 📂 提示词分类
+
+- [交通工具 (Vehicles)](prompts/vehicles/README.md)
+- [武器 (Weapons)](prompts/weapons/README.md)
+- [建筑 (Architecture)](prompts/architecture/README.md)
+- [电子产品 (Electronics)](prompts/electronics/README.md)
+- [家具 (Furniture)](prompts/furniture/README.md)
+- [生活用品 (Household)](prompts/household/README.md)
+- [工业 (Industrial)](prompts/industrial/README.md)
+- [角色 (Characters)](prompts/characters/README.md)
+- [动物 (Animals)](prompts/animals/README.md)
+- [自然 (Nature)](prompts/nature/README.md)
+- [食物 (Food)](prompts/food/README.md)
+- [服饰 (Clothing)](prompts/clothing/README.md)
+
 ## 📂 项目结构
 
 ```
@@ -38,40 +53,27 @@ awesome-3d-prompts/
 两阶段流程：先生成图片，再转换为 3D 模型。
 
 **图片生成工具**：
-- [Stable Diffusion](https://stability.ai/stable-diffusion)
-- [Midjourney](https://www.midjourney.com/)
-- [DALL-E 3](https://openai.com/dall-e-3)
+- [Gemini](https://gemini.google.com/)
+- [Grok](https://grok.ai/)
+- [ChatGPT](https://chatgpt.com/)
 
 **图片转3D工具**：
-- [Shap-E](https://github.com/openai/shap-e)
+- [Stable Point Aware 3D](https://huggingface.co/spaces/stabilityai/stable-point-aware-3d)
 - [Tripo AI](https://www.tripo3d.ai/)
-- [Luma AI Genie](https://lumalabs.ai/genie)
 
 ### 2. Prompt → 3D
 
 直接从文本提示词生成 3D 模型。
 
 **工具**：
-- [DreamFusion](https://dreamfusion3d.github.io/)
-- [Magic3D](https://research.nvidia.com/labs/dir/magic3d/)
-- [Shap-E](https://github.com/openai/shap-e)
+- [Tripo AI](https://www.tripo3d.ai/)
+- [Luma AI Genie](https://lumalabs.ai/genie)
 
 ## 🤝 贡献
 
 欢迎提交 Pull Request 来分享优秀的 3D 提示词！
 
 请阅读我们的[贡献指南](CONTRIBUTING.md)了解行为准则和提交 Pull Request 的流程。
-
-## 📝 提示词格式
-
-每个提示词文件应包含以下信息：
-
-- **标题**: 提示词的简短描述
-- **提示词**: 完整的提示词文本
-- **分类**: 所属类别
-- **风格**: 生成风格
-- **参数**: 推荐参数设置（如有）
-- **示例**: 生成的示例图片或链接（如有）
 
 ## 📄 许可证
 

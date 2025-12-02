@@ -1,0 +1,77 @@
+
+Cars (汽车): 轿车、跑车、卡车、越野车。
+
+Aircraft (航空器): 民航客机、战斗机、直升机、无人机 (Drones)。
+
+Watercraft (水面舰艇): 帆船、游艇、货轮、潜艇。
+
+Sci-Fi Vehicles (科幻载具): 太空飞船、悬浮车、机甲载具 (Mechs)。
+
+Railway (轨道交通): 火车头、地铁车厢、有轨电车。
+
+Heavy Machinery (重型机械): 挖掘机、起重机、推土机。
+
+
+Melee (冷兵器): 剑 (Swords)、刀 (Knives)、斧 (Axes)、长矛 (Spears)、盾牌 (Shields)。
+
+Firearms (现代枪械): 手枪、步枪、狙击枪、机枪。
+
+Sci-Fi Weapons (科幻武器): 激光枪、等离子炮、光剑。
+
+Explosives (爆炸物): 手雷、地雷、C4炸弹、导弹。
+
+Artillery (重火器): 坦克炮塔、大炮、防空炮。
+
+
+Exterior (室外外观): 摩天大楼、独栋房屋、古堡、寺庙、桥梁。
+
+Interior (室内结构): 房间模块、走廊、楼梯、门窗组件。
+
+Ruins/Damaged (废墟): 破碎的墙壁、倒塌的柱子、瓦砾堆。
+
+Street Props (街道设施): 路灯、长椅、消防栓、路障、垃圾桶。
+
+Electronics (电子产品): 手机、电脑、老式收音机、服务器机柜。
+
+Furniture (家具): 桌子、椅子、沙发、床、柜子。
+
+Household (生活用品): 杯盘碗碟、瓶子、台灯、书籍。
+
+Industrial (工业零件): 管道、阀门、齿轮、油桶、集装箱。
+
+
+Realistic Humans (写实人类): 男性、女性、老人、婴儿（通常含高精度皮肤纹理）。
+
+Stylized Humans (风格化人类): 卡通比例、大头娃娃 (Chibi)、二次元角色。
+
+Humanoids (类人生物): 兽人 (Orcs)、精灵 (Elves)、外星人 (Aliens)。
+
+Body Parts (身体部件): 手、脚、头部模型、眼球、牙齿。
+
+
+Mammals (哺乳动物): 猫、狗、狮子、大象、马。
+
+Reptiles/Amphibians (爬行/两栖): 蛇、蜥蜴、青蛙、鳄鱼。
+
+Birds (鸟类): 鹰、鸽子、家禽（包含羽毛模型）。
+
+Insects (昆虫): 蜘蛛、甲虫、蝴蝶。
+
+Mythical Creatures (神话生物): 龙 (Dragons)、独角兽、狮鹫、克苏鲁怪物。
+
+
+Trees (树木): 阔叶树、针叶树、枯树、树桩。
+
+Plants (植物): 草丛 (Grass clumps)、灌木、花朵、盆栽。
+
+Rocks (岩石): 巨石、鹅卵石、岩壁、悬崖模块。
+
+
+Food (食物): 水果、蔬菜、熟食、面包。
+
+
+Clothing (衣物): T恤、夹克、裤子、裙子、鞋子。
+
+Armor (盔甲): 板甲 (Plate)、锁子甲 (Chainmail)、皮甲。
+
+Accessories (配饰): 帽子、背包、珠宝、眼镜。

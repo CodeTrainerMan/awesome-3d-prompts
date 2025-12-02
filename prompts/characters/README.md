@@ -1,43 +1,13 @@
 # Character Prompts
 
-Character prompts for generating 3D characters, avatars, and humanoid figures.
+English | [中文](README_ZH.md)
 
-## 🎭 Categories
+Prompts for generating Realistic Humans (Male, Female, Elderly, Baby), Stylized Humans (Cartoon proportions, Chibi, Anime), Humanoids (Orcs, Elves, Aliens), and Body Parts (Hands, Feet, Head models, Eyes, Teeth).
 
-- **Human Characters** - Realistic and stylized human figures
-- **Fantasy Characters** - Creatures, monsters, and fantasy beings
-- **Robots & Androids** - Mechanical characters and cyborgs
-- **Animals** - Anthropomorphic and realistic animals
-- **Abstract Characters** - Stylized and abstract character designs
+## Prompts List
 
-## 📝 Format Example
-
-```markdown
-# Warrior Character
-
-**Category**: Fantasy Character
-**Style**: Realistic, Fantasy
-**Tool**: Stable Diffusion 3D
-
-## Prompt
-
-A detailed 3D warrior character with armor...
-
-## Parameters
-
-- Resolution: 1024x1024
-- Quality: High
-
-## Description
-
-This prompt generates a fantasy warrior...
-```
-
-## 🚀 Getting Started
-
-Browse the prompts in this directory and use them with your favorite 3D generation tool!
+- [Fantasy Warrior Character](fantasy-warrior.md)
 
 ---
 
-[← Back to Prompts](../README.md)
-
+[← Back to Prompts](../../README.md)
