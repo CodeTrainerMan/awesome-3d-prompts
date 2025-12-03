@@ -32,20 +32,6 @@ This project is dedicated to collecting and organizing excellent 3D generation p
 - [Food](prompts/food/README.md)
 - [Clothing](prompts/clothing/README.md)
 
-## 📂 Project Structure
-
-```
-awesome-3d-prompts/
-├── README.md          # Project documentation (English)
-├── README_ZH.md       # Project documentation (Chinese)
-├── prompts/           # Prompt categories
-│   ├── characters/    # Character prompts
-│   ├── objects/       # Object prompts
-│   ├── scenes/        # Scene prompts
-│   └── styles/        # Style prompts
-└── examples/          # Examples and demos
-```
-
 ## 🔄 Generation Workflows
 
 ### 1. Prompt → Image → 3D
@@ -68,6 +54,11 @@ Direct generation from text prompts to 3D models.
 **Tools**:
 - [Tripo AI](https://www.tripo3d.ai/)
 - [Luma AI Genie](https://lumalabs.ai/genie)
+
+## 💬 Community
+
+- **WeChat**: CodeTrainer (Reply `3dprompts` to join the group)
+- **Telegram**: [https://t.me/prompts3D](https://t.me/prompts3D)
 
 ## 🤝 Contributing
 

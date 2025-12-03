@@ -32,20 +32,6 @@
 - [食物 (Food)](prompts/food/README.md)
 - [服饰 (Clothing)](prompts/clothing/README.md)
 
-## 📂 项目结构
-
-```
-awesome-3d-prompts/
-├── README.md          # 项目说明文档（英文）
-├── README_ZH.md       # 项目说明文档（中文）
-├── prompts/           # 提示词分类目录
-│   ├── characters/    # 角色类提示词
-│   ├── objects/       # 物体类提示词
-│   ├── scenes/        # 场景类提示词
-│   └── styles/        # 风格类提示词
-└── examples/          # 示例和演示
-```
-
 ## 🔄 生成流程
 
 ### 1. Prompt → Image → 3D
@@ -68,6 +54,11 @@ awesome-3d-prompts/
 **工具**：
 - [Tripo AI](https://www.tripo3d.ai/)
 - [Luma AI Genie](https://lumalabs.ai/genie)
+
+## 💬 社区
+
+- **微信**: CodeTrainer (回复 `3dprompts` 进群)
+- **Telegram**: [https://t.me/prompts3D](https://t.me/prompts3D)
 
 ## 🤝 贡献
 

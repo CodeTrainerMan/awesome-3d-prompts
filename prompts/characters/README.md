@@ -7,6 +7,7 @@ Prompts for generating Realistic Humans (Male, Female, Elderly, Baby), Stylized 
 ## Prompts List
 
 - [Fantasy Warrior Character](fantasy-warrior.md)
+- [Musk Iron Man](musk-ironman.md)
 
 ---
 

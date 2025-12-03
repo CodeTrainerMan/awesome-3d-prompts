@@ -9,7 +9,7 @@ A highly detailed 3D fantasy warrior character, full body, wearing ornate mediev
 ## Process
 
 1. **gemini nano banana**
-2. **Stable Diffusion 3D**:
+2. **Stable Diffusion 3D**
 
 ## Preview Link
 
