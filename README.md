@@ -44,6 +44,7 @@ Two-stage workflow: generate images first, then convert to 3D models.
 - [ChatGPT](https://chatgpt.com/)
 
 **Image to 3D Tools**:
+- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
 - [Stable Point Aware 3D](https://huggingface.co/spaces/stabilityai/stable-point-aware-3d)
 - [Tripo AI](https://www.tripo3d.ai/)
 
@@ -52,6 +53,7 @@ Two-stage workflow: generate images first, then convert to 3D models.
 Direct generation from text prompts to 3D models.
 
 **Tools**:
+- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
 - [Tripo AI](https://www.tripo3d.ai/)
 - [Luma AI Genie](https://lumalabs.ai/genie)
 

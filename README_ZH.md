@@ -44,6 +44,7 @@
 - [ChatGPT](https://chatgpt.com/)
 
 **图片转3D工具**：
+- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
 - [Stable Point Aware 3D](https://huggingface.co/spaces/stabilityai/stable-point-aware-3d)
 - [Tripo AI](https://www.tripo3d.ai/)
 
@@ -52,6 +53,7 @@
 直接从文本提示词生成 3D 模型。
 
 **工具**：
+- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
 - [Tripo AI](https://www.tripo3d.ai/)
 - [Luma AI Genie](https://lumalabs.ai/genie)
 
