@@ -34,7 +34,17 @@ This project is dedicated to collecting and organizing excellent 3D generation p
 
 ## 🔄 Generation Workflows
 
-### 1. Prompt → Image → 3D
+### 1. Prompt → 3D
+
+Direct generation from text prompts to 3D models.
+
+**Tools**:
+- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
+- [Meshy AI](https://www.meshy.ai/)
+- [Tripo AI](https://www.tripo3d.ai/)
+- [Luma AI Genie](https://lumalabs.ai/genie)
+
+### 2. Prompt → Image → 3D
 
 Two-stage workflow: generate images first, then convert to 3D models.
 
@@ -45,17 +55,9 @@ Two-stage workflow: generate images first, then convert to 3D models.
 
 **Image to 3D Tools**:
 - [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
+- [Meshy AI](https://www.meshy.ai/)
 - [Stable Point Aware 3D](https://huggingface.co/spaces/stabilityai/stable-point-aware-3d)
 - [Tripo AI](https://www.tripo3d.ai/)
-
-### 2. Prompt → 3D
-
-Direct generation from text prompts to 3D models.
-
-**Tools**:
-- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
-- [Tripo AI](https://www.tripo3d.ai/)
-- [Luma AI Genie](https://lumalabs.ai/genie)
 
 ## 💬 Community
 

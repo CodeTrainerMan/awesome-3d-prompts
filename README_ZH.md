@@ -34,7 +34,17 @@
 
 ## 🔄 生成流程
 
-### 1. Prompt → Image → 3D
+### 1. Prompt → 3D
+
+直接从文本提示词生成 3D 模型。
+
+**工具**：
+- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
+- [Meshy AI](https://www.meshy.ai/)
+- [Tripo AI](https://www.tripo3d.ai/)
+- [Luma AI Genie](https://lumalabs.ai/genie)
+
+### 2. Prompt → Image → 3D
 
 两阶段流程：先生成图片，再转换为 3D 模型。
 
@@ -45,17 +55,9 @@
 
 **图片转3D工具**：
 - [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
+- [Meshy AI](https://www.meshy.ai/)
 - [Stable Point Aware 3D](https://huggingface.co/spaces/stabilityai/stable-point-aware-3d)
 - [Tripo AI](https://www.tripo3d.ai/)
-
-### 2. Prompt → 3D
-
-直接从文本提示词生成 3D 模型。
-
-**工具**：
-- [Hunyuan 3D](https://3d.hunyuan.tencent.com/)
-- [Tripo AI](https://www.tripo3d.ai/)
-- [Luma AI Genie](https://lumalabs.ai/genie)
 
 ## 💬 社区
 
