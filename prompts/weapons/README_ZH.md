@@ -6,7 +6,7 @@
 
 ## 作品列表
 
-*(暂无作品)*
+- [Thor's Hammer (雷神之锤)](thors-hammer.md)
 
 ---
 

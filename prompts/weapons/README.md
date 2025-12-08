@@ -6,7 +6,7 @@ Prompts for generating Melee Weapons (Swords, Knives, Axes, Spears, Shields), Fi
 
 ## Prompts List
 
-*(No prompts available yet)*
+- [Thor's Hammer (Mjölnir)](thors-hammer.md)
 
 ---
 
