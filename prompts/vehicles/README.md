@@ -6,7 +6,7 @@ Prompts for generating Cars (Sedans, Sports cars, Trucks, SUVs), Aircraft (Comme
 
 ## Prompts List
 
-*(No prompts available yet)*
+- [Cyberpunk Passenger Aircraft](cyberpunk-aircraft.md)
 
 ---
 
