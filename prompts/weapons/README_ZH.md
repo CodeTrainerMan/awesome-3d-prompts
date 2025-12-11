@@ -7,6 +7,7 @@
 ## 作品列表
 
 - [Thor's Hammer (雷神之锤)](thors-hammer.md)
+- [Ultra Detailed Tank (超细节坦克)](ultra-detailed-tank.md)
 
 ---
 

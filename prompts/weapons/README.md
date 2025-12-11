@@ -7,6 +7,7 @@ Prompts for generating Melee Weapons (Swords, Knives, Axes, Spears, Shields), Fi
 ## Prompts List
 
 - [Thor's Hammer (Mjölnir)](thors-hammer.md)
+- [Ultra Detailed Tank](ultra-detailed-tank.md)
 
 ---
 
