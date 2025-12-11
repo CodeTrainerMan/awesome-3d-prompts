@@ -9,6 +9,7 @@ Prompts for generating Realistic Humans (Male, Female, Elderly, Baby), Stylized 
 - [Fantasy Warrior Character](fantasy-warrior.md)
 - [Musk Iron Man](musk-ironman.md)
 - [SiliconOranges](SiliconOranges.md)
+- [SiliconOranges Christmas Edition](SiliconOranges-Christmas.md)
 
 ---
 
