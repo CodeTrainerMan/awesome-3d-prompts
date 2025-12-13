@@ -6,7 +6,7 @@ Prompts for generating Mammals (Cats, dogs, lions, elephants, horses), Reptiles/
 
 ## Prompts List
 
-*(No prompts available yet)*
+- [Giganotosaurus](giganotosaurus.md)
 
 ---
 

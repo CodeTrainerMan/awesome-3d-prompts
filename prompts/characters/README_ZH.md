@@ -10,6 +10,7 @@
 - [Musk Iron Man (马斯克钢铁侠)](musk-ironman.md)
 - [SiliconOranges (硅基橘子)](SiliconOranges.md)
 - [SiliconOranges Christmas Edition (硅基橘子圣诞版)](SiliconOranges-Christmas.md)
+- [Christmas Snowman (圣诞雪人)](christmas-snowman.md)
 
 ---
 

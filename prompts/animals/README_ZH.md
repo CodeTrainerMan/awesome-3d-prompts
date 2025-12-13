@@ -6,7 +6,7 @@
 
 ## 作品列表
 
-*(暂无作品)*
+- [Giganotosaurus (南方巨兽龙)](giganotosaurus.md)
 
 ---
 
