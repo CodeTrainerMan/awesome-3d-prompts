@@ -6,7 +6,7 @@ Prompts for generating Exterior (Skyscrapers, Houses, Castles, Temples, Bridges)
 
 ## Prompts List
 
-*(No prompts available yet)*
+- [Neuschwanstein Castle (新天鹅堡)](Neuschwanstein-Castle.md)
 
 ---
 
