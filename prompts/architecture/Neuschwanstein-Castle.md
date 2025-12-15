@@ -12,7 +12,7 @@
     - **Prompt**: 新天鹅堡
     - **Output**: Reference Image
 
-    ![Reference Image](image.png)
+    ![Reference Image](Neuschwanstein-Castle.png)
 
 2. **3D Generation**:
     - **Input**: The generated image above.
@@ -20,10 +20,10 @@
 
 ## Files
 
-- **Reference Image**: [image.png](image.png)
-- **Meshy AI Model**: [Meshy_AI_新天鹅堡_1215115816_texture.glb](Meshy_AI_新天鹅堡_1215115816_texture.glb)
+- **Reference Image**: [Neuschwanstein-Castle.png](Neuschwanstein-Castle.png)
+- **Meshy AI Model**: [Neuschwanstein-Castle.glb](Neuschwanstein-Castle.glb)
 
 ## Preview Link
 
-[View 3D Model (Meshy AI)](Meshy_AI_新天鹅堡_1215115816_texture.glb)
+[View 3D Model (Meshy AI)](Neuschwanstein-Castle.glb)
 
