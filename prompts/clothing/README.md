@@ -6,7 +6,7 @@ Prompts for generating Clothing (T-shirts, jackets, pants, skirts, shoes), Armor
 
 ## Prompts List
 
-*(No prompts available yet)*
+- [Jensen Huang Jacket (黄仁勋夹克)](Jensen-Huang-Jacket.md)
 
 ---
 
