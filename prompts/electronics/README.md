@@ -6,7 +6,7 @@ Prompts for generating Electronics (Phones, computers, vintage radios, server ra
 
 ## Prompts List
 
-*(No prompts available yet)*
+- [Apple Vision Pro](apple-vision-pro.md)
 
 ---
 
