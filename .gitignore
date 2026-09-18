@@ -23,4 +23,3 @@ data/models.json
 .vscode/
 .playwright-cli/
 *.yaml
-.env*
