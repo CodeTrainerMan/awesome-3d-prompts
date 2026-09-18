@@ -25,7 +25,7 @@
 
 仓库内置了一个基于 Next.js 的画廊站点，可以直接在浏览器里浏览所有已收录的模型：3D 在线预览（旋转/缩放）、同一提示词不同工具的版本对比、一键复制提示词、下载 GLB。
 
-**在线地址：** [https://3dprompts.club](https://3dprompts.club)
+**在线地址：** [https://www.3dprompts.club](https://www.3dprompts.club)
 
 本地运行：
 

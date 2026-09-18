@@ -25,7 +25,7 @@ This project is dedicated to collecting and organizing excellent 3D generation p
 
 The repository ships with a built-in Next.js gallery that renders every collected model in the browser — orbit/zoom 3D previews, side-by-side comparison of different generation tools, one-click prompt copy and GLB download.
 
-**Live site:** [https://3dprompts.club](https://3dprompts.club)
+**Live site:** [https://www.3dprompts.club](https://www.3dprompts.club)
 
 Run it locally:
 
