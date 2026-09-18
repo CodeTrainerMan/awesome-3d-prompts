@@ -40,6 +40,41 @@ function CopyButton({ text }: { text: string }) {
   );
 }
 
+/**
+ * 预览视频在部分 CDN（如 GitHub raw）上会以 application/octet-stream 返回，
+ * 浏览器会因为 MIME 不匹配而拒绝播放。这里取回后重写类型再交给 <video>。
+ */
+function PreviewVideo({ url }: { url: string }) {
+  const [src, setSrc] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    let objectUrl: string | null = null;
+
+    fetch(url)
+      .then((res) => res.blob())
+      .then((blob) => {
+        if (cancelled) return;
+        objectUrl = URL.createObjectURL(new Blob([blob], { type: 'video/mp4' }));
+        setSrc(objectUrl);
+      })
+      .catch(() => {
+        if (!cancelled) setSrc(url);
+      });
+
+    return () => {
+      cancelled = true;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+    };
+  }, [url]);
+
+  if (!src) {
+    return <div className="h-40 w-full animate-pulse rounded-2xl bg-neutral-100" />;
+  }
+
+  return <video src={src} controls playsInline className="w-full rounded-2xl bg-black" />;
+}
+
 export function ModelDialog({ model, onClose }: { model: Model; onClose: () => void }) {
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -141,12 +176,7 @@ export function ModelDialog({ model, onClose }: { model: Model; onClose: () => v
               {model.video && (
                 <div className="mt-5">
                   <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-400">Preview Video</h3>
-                  <video
-                    src={assetUrl(model, model.video.file)}
-                    controls
-                    playsInline
-                    className="w-full rounded-2xl bg-black"
-                  />
+                  <PreviewVideo url={assetUrl(model, model.video.file)} />
                 </div>
               )}
 
