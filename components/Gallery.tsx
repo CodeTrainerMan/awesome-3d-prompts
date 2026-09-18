@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { Catalog, Model } from '@/lib/types';
 import { categoryById, formatBytes } from '@/lib/catalog';
+import { modelPath } from '@/lib/site';
 import { ModelCard } from './ModelCard';
 import { ModelDialog } from './ModelDialog';
 import { IconGithub, IconSearch } from './icons';
@@ -15,21 +16,40 @@ export function Gallery({ catalog }: { catalog: Catalog }) {
   const [onlyPreviewable, setOnlyPreviewable] = useState(false);
   const [activeId, setActiveId] = useState<string | null>(null);
 
-  // Deep-link support: /?model=<category>/<slug>
+  // Deep-link support: legacy /?model=<category>/<slug>
   useEffect(() => {
     const id = new URLSearchParams(window.location.search).get('model');
     if (id && models.some((m) => m.id === id)) setActiveId(id);
   }, [models]);
 
-  const open = useCallback((id: string) => {
-    setActiveId(id);
-    window.history.replaceState(null, '', `?model=${encodeURIComponent(id)}`);
-  }, []);
+  // Opening a card pushes the real detail URL so the browser Back button
+  // (and the share sheet) always show a link that resolves to a full page.
+  const open = useCallback(
+    (id: string) => {
+      const model = models.find((m) => m.id === id);
+      if (!model) return;
+      setActiveId(id);
+      window.history.pushState({ modelId: id }, '', modelPath(model));
+    },
+    [models],
+  );
 
   const close = useCallback(() => {
-    setActiveId(null);
-    window.history.replaceState(null, '', window.location.pathname);
+    if (window.history.state?.modelId) {
+      window.history.back();
+    } else {
+      setActiveId(null);
+    }
   }, []);
+
+  useEffect(() => {
+    const onPopState = (event: PopStateEvent) => {
+      const id = (event.state as { modelId?: string } | null)?.modelId ?? null;
+      setActiveId(id && models.some((m) => m.id === id) ? id : null);
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [models]);
 
   const activeModel = useMemo<Model | null>(
     () => models.find((m) => m.id === activeId) ?? null,
@@ -41,6 +61,10 @@ export function Gallery({ catalog }: { catalog: Catalog }) {
     for (const model of models) map.set(model.category, (map.get(model.category) ?? 0) + 1);
     return map;
   }, [models]);
+
+  // Categories declared in the repo but still empty are hidden, and the headline
+  // figure has to match what a visitor can actually click.
+  const liveCategories = useMemo(() => categories.filter((c) => c.count > 0), [categories]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -98,7 +122,7 @@ export function Gallery({ catalog }: { catalog: Catalog }) {
           </div>
           <div>
             <dt className="text-neutral-400">分类</dt>
-            <dd className="mt-0.5 text-2xl font-semibold text-neutral-900">{stats.categories}</dd>
+            <dd className="mt-0.5 text-2xl font-semibold text-neutral-900">{liveCategories.length}</dd>
           </div>
           <div>
             <dt className="text-neutral-400">模型体积</dt>
@@ -172,7 +196,18 @@ export function Gallery({ catalog }: { catalog: Catalog }) {
       )}
 
       <footer className="mt-20 border-t border-neutral-200 pt-6 text-xs text-neutral-400">
-        <p>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <span className="text-neutral-600">社区：微信 CodeTrainer（回复 3dprompts 入群）</span>
+          <a
+            href="https://t.me/prompts3D"
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-600 underline decoration-neutral-300 underline-offset-2"
+          >
+            Telegram
+          </a>
+        </div>
+        <p className="mt-3">
           所有模型与提示词来自开源社区贡献，遵循 MIT 协议。想上传自己的作品？阅读{' '}
           <a
             href="https://github.com/CodeTrainerMan/awesome-3d-prompts/blob/main/CONTRIBUTING.md"

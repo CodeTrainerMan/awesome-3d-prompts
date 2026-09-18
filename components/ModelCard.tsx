@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { assetUrl, displayName, formatBytes } from '@/lib/catalog';
+import { modelPath } from '@/lib/site';
 import type { Category, Model } from '@/lib/types';
 
 export function ModelCard({ model, category, onOpen }: { model: Model; category?: Category; onOpen: () => void }) {
@@ -9,10 +10,18 @@ export function ModelCard({ model, category, onOpen }: { model: Model; category?
   const previewUrl = model.preview ? assetUrl(model, model.preview.file) : null;
   const showImage = previewUrl && !imageFailed;
 
+  // Keep a real href so crawlers, middle-click and "open in new tab" all work,
+  // while a plain click stays inside the gallery modal.
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+    event.preventDefault();
+    onOpen();
+  };
+
   return (
-    <button
-      type="button"
-      onClick={onOpen}
+    <a
+      href={modelPath(model)}
+      onClick={handleClick}
       className="group relative flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white text-left transition duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-[0_18px_50px_-24px_rgba(0,0,0,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
@@ -72,6 +81,6 @@ export function ModelCard({ model, category, onOpen }: { model: Model; category?
           )}
         </div>
       </div>
-    </button>
+    </a>
   );
 }
