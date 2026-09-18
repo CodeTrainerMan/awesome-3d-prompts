@@ -39,6 +39,7 @@ How it works:
 - `npm run index` scans `prompts/` and regenerates `data/models.json` (run automatically before `dev` / `build` — no manual step when you add new prompts).
 - Binary assets (`.glb` / `.png` / `.mp4`) stay next to the markdown files and are streamed by `GET /api/asset/<category>/<file>`, so nothing is duplicated into `public/`.
 - On serverless hosts (Vercel) the same route 307-redirects to `ASSET_BASE_URL` instead: function bundles cap at 250 MB while `prompts/` holds ~450 MB. Point the variable at any CDN mirroring `prompts/` (defaults to the GitHub raw mirror).
+- Every prompt gets its own page at `/m/<category>/<slug>` with a generated Open Graph card, so a single entry can be shared on social media and indexed by search engines. `/sitemap.xml` and `/robots.txt` are generated at build time.
 
 Production build:
 

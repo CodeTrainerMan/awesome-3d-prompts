@@ -39,6 +39,7 @@ npm run dev      # → http://localhost:3000
 - `npm run index` 会扫描 `prompts/` 目录并重新生成 `data/models.json`（`dev` / `build` 前自动执行，新增提示词无需手动操作）。
 - 二进制资源（`.glb` / `.png` / `.mp4`）保留在 markdown 旁边，通过 `GET /api/asset/<category>/<file>` 流式返回，不会复制进 `public/`。
 - 部署到 Serverless 平台（如 Vercel）时，该路由会改为 307 重定向到 `ASSET_BASE_URL`：函数产物上限 250 MB，而 `prompts/` 约 450 MB。把该变量指向任意镜像了 `prompts/` 的 CDN 即可（默认使用 GitHub raw）。
+- 每条 prompt 都有独立页面 `/m/<category>/<slug>`，自带 Open Graph 卡片，可以直接分享到社交平台并被搜索引擎收录。`/sitemap.xml` 与 `/robots.txt` 由构建自动生成。
 
 生产构建：
 
