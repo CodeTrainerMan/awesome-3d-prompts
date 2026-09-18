@@ -49,50 +49,58 @@ We welcome contributions of all kinds! Here are some ways you can help:
 
 ### Prompt Format
 
-Each prompt file should follow this structure:
+`npm run index` turns these files into the gallery, so the headings matter — this is
+the structure the parser actually reads:
 
 ```markdown
 # Title
 
-**Category**: [category name]
-**Style**: [style description]
-**Tool**: [recommended tool(s)]
-**Tags**: tag1, tag2, tag3
+**Author**: [@yourhandle](https://x.com/yourhandle)
 
 ## Prompt
 
-[The actual prompt text]
-
-## Parameters
-
-- Parameter 1: value
-- Parameter 2: value
+[The exact prompt text, verbatim]
 
 ## Description
 
-[Additional notes and descriptions]
+[Optional: why this case is interesting]
 
-## Variations
+## Process
 
-- Variation 1
-- Variation 2
+1. **Image Generation**:
+    - **Tool**: Gemini
+    ![Reference Image](my-model.png)
 
-## Example Use Cases
+2. **3D Generation**:
+    - **Tool 1**: Hunyuan 3D
+    - **Tool 2**: Tripo3D
 
-- Use case 1
-- Use case 2
+## Files
 
----
+- **Reference Image**: [my-model.png](my-model.png)
+- **Hunyuan 3D Model**: [my-model-hunyuan.glb](my-model-hunyuan.glb)
 
-**Author**: Your Name or Community
-**Last Updated**: YYYY-MM-DD
+## Preview Link
+
+[View 3D Model (Hunyuan 3D)](my-model-hunyuan.glb)
 ```
 
-### File Naming
+Scaffold it instead of copy-pasting:
 
-- Use kebab-case: `my-awesome-prompt.md`
-- Be descriptive: `fantasy-warrior.md` not `prompt1.md`
-- Include category in complex names: `modern-office-chair.md`
+```bash
+npm run new -- characters my-model
+```
+
+### Asset Naming
+
+Binaries live next to the markdown; nothing is copied into `public/`:
+
+- `my-model.png` — reference / rendered image (also becomes the share card)
+- `my-model-<tool>.glb` — one result per tool, e.g. `my-model-hunyuan.glb`
+- `my-model.mp4` — optional turntable preview (the best-performing asset on social)
+
+Files that are not present are simply skipped, so it is fine to open a PR with a
+single tool result and add the rest later.
 
 ### Guidelines
 
@@ -154,50 +162,56 @@ Each prompt file should follow this structure:
 
 ### 提示词格式
 
-每个提示词文件应遵循以下结构：
+`npm run index` 会把这些文件解析成画廊，所以标题结构必须一致——以下是解析器实际读取的字段：
 
 ```markdown
 # 标题
 
-**Category**: [分类名称]
-**Style**: [风格描述]
-**Tool**: [推荐工具]
-**Tags**: 标签1, 标签2, 标签3
+**Author**: [@你的主页](https://x.com/你的主页)
 
 ## Prompt
 
-[实际的提示词文本]
-
-## Parameters
-
-- 参数1: 值
-- 参数2: 值
+[逐字粘贴的原始提示词]
 
 ## Description
 
-[附加说明和描述]
+[可选：这条为什么有意思]
 
-## Variations
+## Process
 
-- 变体1
-- 变体2
+1. **Image Generation**:
+    - **Tool**: Gemini
+    ![Reference Image](my-model.png)
 
-## Example Use Cases
+2. **3D Generation**:
+    - **Tool 1**: Hunyuan 3D
+    - **Tool 2**: Tripo3D
 
-- 用例1
-- 用例2
+## Files
 
----
+- **Reference Image**: [my-model.png](my-model.png)
+- **Hunyuan 3D Model**: [my-model-hunyuan.glb](my-model-hunyuan.glb)
 
-**Author**: 你的名字或 Community
-**Last Updated**: YYYY-MM-DD
+## Preview Link
+
+[View 3D Model (Hunyuan 3D)](my-model-hunyuan.glb)
+```
+
+不用手抄，直接生成骨架：
+
+```bash
+npm run new -- characters my-model
 ```
 
 ### 文件命名
 
-- 使用 kebab-case：`my-awesome-prompt.md`
-- 要有描述性：`fantasy-warrior.md` 而不是 `prompt1.md`
-- 复杂名称包含分类：`modern-office-chair.md`
+二进制文件放在 markdown 旁边，不会复制进 `public/`：
+
+- `my-model.png` —— 参考图/渲染图（同时作为分享卡片）
+- `my-model-<tool>.glb` —— 每个工具一个结果，如 `my-model-hunyuan.glb`
+- `my-model.mp4` —— 可选旋转预览（社交平台上效果最好的素材）
+
+缺失的文件会被自动跳过，所以只有单个工具结果也可以先提 PR，之后再补。
 
 ### 指南
 

@@ -18,7 +18,6 @@ A direct full-body frontal photograph of Elon Musk standing on Mars, perfectly s
     - **Tool 1**: Hitem3d
     - **Tool 2**: Tripo3D
     - **Tool 3**: Hunyuan 3D
-    - **Tool 4**: Meshy AI
 
 ## Files
 
@@ -26,8 +25,9 @@ A direct full-body frontal photograph of Elon Musk standing on Mars, perfectly s
 - **Hitem3d Model**: [musk-ironman-hitem3d.glb](musk-ironman-hitem3d.glb)
 - **Tripo3D Model**: [musk-ironman-tripo.glb](musk-ironman-tripo.glb)
 - **Hunyuan 3D Model**: [musk-ironman-hunyuan.glb](musk-ironman-hunyuan.glb)
-- **Meshy AI Model**: [Animation_Hip_Hop_Dance_1_withSkin.glb](Animation_Hip_Hop_Dance_1_withSkin.glb)
+
+Meshy AI 的生成结果尚未上传（原链接指向了一个无关文件），欢迎补充。
 
 ## Preview Link
 
-[View 3D Model (Hitem3d)](musk-ironman-hitem3d.glb) | [View 3D Model (Tripo3D)](musk-ironman-tripo.glb) | [View 3D Model (Hunyuan 3D)](musk-ironman-hunyuan.glb) | [View 3D Model (Meshy AI)](Animation_Hip_Hop_Dance_1_withSkin.glb)
+[View 3D Model (Hitem3d)](musk-ironman-hitem3d.glb) | [View 3D Model (Tripo3D)](musk-ironman-tripo.glb) | [View 3D Model (Hunyuan 3D)](musk-ironman-hunyuan.glb)

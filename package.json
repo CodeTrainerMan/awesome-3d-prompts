@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "index": "node scripts/build-index.mjs",
+    "new": "node scripts/new-prompt.mjs",
     "dev": "npm run index && next dev",
     "build": "npm run index && next build",
     "start": "next start",

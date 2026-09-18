@@ -95,6 +95,8 @@ npm run start
 - **微信**: CodeTrainer (回复 `3dprompts` 进群)
 - **Telegram**: [https://t.me/prompts3D](https://t.me/prompts3D)
 
+推广执行手册（渠道顺序、话术模板、每周复盘）见 [PROMOTION.md](PROMOTION.md)。
+
 ## 🤝 贡献
 
 欢迎提交 Pull Request 来分享优秀的 3D 提示词！

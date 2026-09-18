@@ -95,6 +95,8 @@ Two-stage workflow: generate images first, then convert to 3D models.
 - **WeChat**: CodeTrainer (Reply `3dprompts` to join the group)
 - **Telegram**: [https://t.me/prompts3D](https://t.me/prompts3D)
 
+See [PROMOTION.md](PROMOTION.md) for the promotion playbook: channel order, copy templates and the weekly review checklist.
+
 ## 🤝 Contributing
 
 Pull requests are welcome! Feel free to share your excellent 3D prompts!
