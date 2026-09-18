@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/brand/mark.svg" width="96" alt="Awesome 3D Prompts logo" />
+</p>
+
 # Awesome 3D Prompts
 
 [English](README.md) | 中文

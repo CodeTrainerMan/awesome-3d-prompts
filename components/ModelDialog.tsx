@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { assetUrl, categoryById, displayName, formatBytes } from '@/lib/catalog';
 import type { Model } from '@/lib/types';
 import { ViewerPanel } from './ViewerPanel';
-import { IconCheck, IconClose, IconCopy, IconCube, IconGithub } from './icons';
+import { IconCheck, IconClose, IconCopy, IconGithub } from './icons';
 
 const REPO = 'https://github.com/CodeTrainerMan/awesome-3d-prompts';
 

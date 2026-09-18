@@ -5,7 +5,7 @@ import type { Catalog, Model } from '@/lib/types';
 import { categoryById, formatBytes } from '@/lib/catalog';
 import { ModelCard } from './ModelCard';
 import { ModelDialog } from './ModelDialog';
-import { IconCube, IconGithub, IconSearch } from './icons';
+import { IconGithub, IconSearch } from './icons';
 
 export function Gallery({ catalog }: { catalog: Catalog }) {
   const { models, categories, stats } = catalog;
@@ -60,10 +60,9 @@ export function Gallery({ catalog }: { catalog: Catalog }) {
   return (
     <div className="mx-auto w-full max-w-[1400px] px-5 pb-24 sm:px-8">
       <header className="flex items-center justify-between py-6">
-        <a href="/" className="flex items-center gap-2 text-sm font-semibold tracking-tight text-neutral-900">
-          <span className="grid h-8 w-8 place-items-center rounded-xl bg-neutral-900 text-white">
-            <IconCube className="h-4 w-4" />
-          </span>
+        <a href="/" className="flex items-center gap-2.5 text-sm font-semibold tracking-tight text-neutral-900">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/mark.svg" alt="3D Prompts logo" className="h-8 w-8" />
           Awesome 3D Prompts
         </a>
         <a
