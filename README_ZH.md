@@ -21,6 +21,10 @@
 
 仓库内置了一个基于 Next.js 的画廊站点，可以直接在浏览器里浏览所有已收录的模型：3D 在线预览（旋转/缩放）、同一提示词不同工具的版本对比、一键复制提示词、下载 GLB。
 
+**在线地址：** [https://3dprompts.club](https://3dprompts.club)
+
+本地运行：
+
 ```bash
 npm install
 npm run dev      # → http://localhost:3000
@@ -30,6 +34,7 @@ npm run dev      # → http://localhost:3000
 
 - `npm run index` 会扫描 `prompts/` 目录并重新生成 `data/models.json`（`dev` / `build` 前自动执行，新增提示词无需手动操作）。
 - 二进制资源（`.glb` / `.png` / `.mp4`）保留在 markdown 旁边，通过 `GET /api/asset/<category>/<file>` 流式返回，不会复制进 `public/`。
+- 部署到 Serverless 平台（如 Vercel）时，该路由会改为 307 重定向到 `ASSET_BASE_URL`：函数产物上限 250 MB，而 `prompts/` 约 450 MB。把该变量指向任意镜像了 `prompts/` 的 CDN 即可（默认使用 GitHub raw）。
 
 生产构建：
 

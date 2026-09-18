@@ -21,6 +21,10 @@ This project is dedicated to collecting and organizing excellent 3D generation p
 
 The repository ships with a built-in Next.js gallery that renders every collected model in the browser — orbit/zoom 3D previews, side-by-side comparison of different generation tools, one-click prompt copy and GLB download.
 
+**Live site:** [https://3dprompts.club](https://3dprompts.club)
+
+Run it locally:
+
 ```bash
 npm install
 npm run dev      # → http://localhost:3000
@@ -30,6 +34,7 @@ How it works:
 
 - `npm run index` scans `prompts/` and regenerates `data/models.json` (run automatically before `dev` / `build` — no manual step when you add new prompts).
 - Binary assets (`.glb` / `.png` / `.mp4`) stay next to the markdown files and are streamed by `GET /api/asset/<category>/<file>`, so nothing is duplicated into `public/`.
+- On serverless hosts (Vercel) the same route 307-redirects to `ASSET_BASE_URL` instead: function bundles cap at 250 MB while `prompts/` holds ~450 MB. Point the variable at any CDN mirroring `prompts/` (defaults to the GitHub raw mirror).
 
 Production build:
 
