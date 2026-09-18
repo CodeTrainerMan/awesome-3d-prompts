@@ -12,10 +12,22 @@ import type { NextRequest } from 'next/server';
  * checkout of the built app). Range requests are honoured so the browser can seek
  * inside preview videos.
  *
+ * On serverless hosts (Vercel) the ~450 MB of binaries can not be bundled into
+ * the function (250 MB limit), so the route redirects to an external CDN instead.
+ * Locally `ASSET_BASE_URL` is unset and the files are streamed from disk.
+ *
  * GET /api/asset/<category>/<file>
  */
 
 const ASSET_ROOT = path.resolve(process.cwd(), 'prompts');
+
+/** Override with any CDN that mirrors `prompts/` (S3, R2, jsDelivr, …). */
+const DEFAULT_CDN = 'https://raw.githubusercontent.com/CodeTrainerMan/awesome-3d-prompts/main/prompts';
+
+const ASSET_BASE_URL = (process.env.ASSET_BASE_URL ?? (process.env.VERCEL ? DEFAULT_CDN : undefined))?.replace(
+  /\/+$/,
+  '',
+);
 
 const CONTENT_TYPES: Record<string, string> = {
   '.glb': 'model/gltf-binary',
@@ -39,6 +51,17 @@ export async function GET(request: NextRequest, context: { params: Promise<{ pat
 
   if (absolute !== ASSET_ROOT && !absolute.startsWith(ASSET_ROOT + path.sep)) {
     return new Response('Forbidden', { status: 403 });
+  }
+
+  if (ASSET_BASE_URL) {
+    const suffix = request.nextUrl.pathname.replace(/^\/api\/asset\//, '');
+    return new Response(null, {
+      status: 307,
+      headers: {
+        Location: `${ASSET_BASE_URL}/${suffix}`,
+        'Cache-Control': 'public, max-age=86400',
+      },
+    });
   }
 
   let stats;
