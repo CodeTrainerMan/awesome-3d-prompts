@@ -1,65 +1,25 @@
-# OS files
+# dependencies
+node_modules
+.pnp
+.pnp.*
+
+# next
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# generated index (rebuilt automatically by npm run index)
+data/models.json
+
+# misc
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-Desktop.ini
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.project
-.classpath
-.settings/
-
-# Python (if used for scripts)
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-
-# Node.js (if used for tools)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-package-lock.json
-
-# Temporary files
-*.tmp
-*.temp
 *.log
-*.cache
+.vercel
+.env*.local
 
-# Example outputs (large files)
-examples/images/*.png
-examples/images/*.jpg
-examples/images/*.jpeg
-examples/videos/*.mp4
-examples/videos/*.mov
-!examples/images/.gitkeep
-!examples/videos/.gitkeep
-
-# 3D model files (optional - uncomment if you don't want to track model files)
-# *.obj
-# *.stl
-# *.fbx
-# *.blend
-# *.max
-# *.3ds
-
-# Build artifacts
-dist/
-build/
-*.egg-info/
-
+# editors / tooling
+.idea/
+.vscode/
+.playwright-cli/
+*.yaml

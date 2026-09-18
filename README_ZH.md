@@ -17,6 +17,27 @@
 - 持续更新和维护提示词库
 - 为 3D 内容生成提供参考和灵感
 
+## 🖥️ 在线画廊
+
+仓库内置了一个基于 Next.js 的画廊站点，可以直接在浏览器里浏览所有已收录的模型：3D 在线预览（旋转/缩放）、同一提示词不同工具的版本对比、一键复制提示词、下载 GLB。
+
+```bash
+npm install
+npm run dev      # → http://localhost:3000
+```
+
+工作方式：
+
+- `npm run index` 会扫描 `prompts/` 目录并重新生成 `data/models.json`（`dev` / `build` 前自动执行，新增提示词无需手动操作）。
+- 二进制资源（`.glb` / `.png` / `.mp4`）保留在 markdown 旁边，通过 `GET /api/asset/<category>/<file>` 流式返回，不会复制进 `public/`。
+
+生产构建：
+
+```bash
+npm run build
+npm run start
+```
+
 ## 📂 提示词分类
 
 - [交通工具 (Vehicles)](prompts/vehicles/README.md)

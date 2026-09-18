@@ -1,0 +1,30 @@
+{
+  "name": "awesome-3d-prompts-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "index": "node scripts/build-index.mjs",
+    "dev": "npm run index && next dev",
+    "build": "npm run index && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.6",
+    "@react-three/fiber": "^9.1.0",
+    "next": "^16.3.5",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0.174.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2"
+  }
+}

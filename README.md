@@ -17,6 +17,27 @@ This project is dedicated to collecting and organizing excellent 3D generation p
 - Continuously update and maintain the prompt library
 - Provide references and inspiration for 3D content generation
 
+## 🖥️ Web Gallery
+
+The repository ships with a built-in Next.js gallery that renders every collected model in the browser — orbit/zoom 3D previews, side-by-side comparison of different generation tools, one-click prompt copy and GLB download.
+
+```bash
+npm install
+npm run dev      # → http://localhost:3000
+```
+
+How it works:
+
+- `npm run index` scans `prompts/` and regenerates `data/models.json` (run automatically before `dev` / `build` — no manual step when you add new prompts).
+- Binary assets (`.glb` / `.png` / `.mp4`) stay next to the markdown files and are streamed by `GET /api/asset/<category>/<file>`, so nothing is duplicated into `public/`.
+
+Production build:
+
+```bash
+npm run build
+npm run start
+```
+
 ## 📂 Prompt Categories
 
 - [Vehicles](prompts/vehicles/README.md)
